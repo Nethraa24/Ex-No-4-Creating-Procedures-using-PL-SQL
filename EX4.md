@@ -11,7 +11,28 @@
 6. Display the employee table
 
 ### Program:
+create table emp1(empid number(15),empname varchar(10),dept varchar(10),salary number(10));
+create or replace procedure insert_emp_data as
+begin
+insert into emp1(empid,empname,dept,salary)
+values(1,'Nethraa','HR',50000);
+insert into emp1 values(2,'Kothai','Finance',55000);
+insert into emp1 values(2,'Delli','Finance',52000);
+insert into emp1 values(2,'Hari','Accounts',50000);
+commit;
+end;
+/
+begin
+insert_emp_data;
+end;
+/
+select *from emp1;
+
+
 
 ### Output:
 
+![dbmsexp4](https://github.com/Nethraa24/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121215786/a056cdab-a9c0-4a8c-acfc-b5f6bcddb24f)
+
 ### Result:
+Thus a procedure is created using PL/SQL.

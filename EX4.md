@@ -12,9 +12,11 @@
 
 ### Program:
 
-create table emp1(empid number(15),empname varchar(10),dept varchar(10),salary number(10));
+Create table :
 
+ create table emp2(Emp_id NUMBER,Ename varchar (100) , Dept varchar(20) , Salary NUMBER);
 
+Create Procedure :
 
 create or replace procedure insert_emp_data as
 
@@ -24,36 +26,30 @@ begin
 
 
 
-insert into emp1(empid,empname,dept,salary)
+insert into emp2(Emp_id,Ename,Dept,Salary)
 
 
+values(1,'Nethraa', 'HR' , 50000);
 
-values(1,'Nethraa','HR',50000);
+insert into emp2(Emp_id,Ename,Dept,Salary)
 
+values (2,'Hari' , 'IT',50000);
 
+insert into emp2(Emp_id,Ename,Dept,Salary)
 
-insert into emp1 values(2,'Kothai','Finance',55000);
+values (3,'Kothai' , 'Finance',50000);
 
+insert into emp2(Emp_id,Ename,Dept,Salary)
 
-
-insert into emp1 values(2,'Delli','Finance',52000);
-
-
-
-
-insert into emp1 values(2,'Hari','Accounts',50000);
-
-
+values (4,'Keerthi' , 'IT',50000);
 
 commit;
 
-
-
 end;
-
 
 /
 
+Call Procedure :
 
 begin
 
@@ -69,14 +65,13 @@ end;
 
 
 
-select *from emp1;
+select *from emp2;
 
 
 
 
 ### Output:
-
-![dbmsexp4](https://github.com/Nethraa24/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121215786/a056cdab-a9c0-4a8c-acfc-b5f6bcddb24f)
+![image](https://github.com/Nethraa24/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121215786/84857ac4-a640-4c74-bd8d-1d73ac16390e)
 
 ### Result:
 Thus a procedure is created using PL/SQL.

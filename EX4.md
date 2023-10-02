@@ -11,67 +11,43 @@
 6. Display the employee table
 
 ### Program:
-
-Create table :
-
- create table emp2(Emp_id NUMBER,Ename varchar (100) , Dept varchar(20) , Salary NUMBER);
-
+Create Table :
+```sql
+ create table employee1(Emp_id NUMBER primary key ,Ename varchar (100) , Dept varchar(20) , Salary NUMBER);
+```
 Create Procedure :
-
-create or replace procedure insert_emp_data as
-
-
-
-begin
-
-
-
-insert into emp2(Emp_id,Ename,Dept,Salary)
-
-
-values(1,'Nethraa', 'HR' , 50000);
-
-insert into emp2(Emp_id,Ename,Dept,Salary)
-
-values (2,'Hari' , 'IT',50000);
-
-insert into emp2(Emp_id,Ename,Dept,Salary)
-
-values (3,'Kothai' , 'Finance',50000);
-
-insert into emp2(Emp_id,Ename,Dept,Salary)
-
-values (4,'Keerthi' , 'IT',50000);
-
-commit;
-
-end;
-
-/
-
+```sql
+1  create or replace procedure insert_emp_data as
+2  begin
+3  insert into employee1(Emp_id,Ename,Dept,Salary)
+4  values(1,'Kothai', 'HR' , 50000);
+5  insert into employee1(Emp_id,Ename,Dept,Salary)
+6  values (2,'Mithra Mukundaa' , 'IT',50000);
+7  insert into employee1(Emp_id,Ename,Dept,Salary)
+8  values (3,'Nethraa J' , 'Finance',50000);
+9  insert into employee1(Emp_id,Ename,Dept,Salary)
+10  values (4,'Lekhashree K' , 'IT',50000);
+11  commit;
+12  end;
+13  /
+```
 Call Procedure :
-
-begin
-
-
-insert_emp_data;
-
-
-end;
-
-
-/
-
-
-
-
-select *from emp2;
-
-
-
-
+```sql
+1  begin
+2  insert_emp_data;
+3  end;
+4  /
+```
+Display Table:
+```sql
+1  select * from employee1;
+```
+  
 ### Output:
-![image](https://github.com/Nethraa24/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121215786/84857ac4-a640-4c74-bd8d-1d73ac16390e)
+![image](https://github.com/KothaiKumar/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121215739/54f1064d-ad31-41f2-8d27-4a3ba89fcb7c)
+
+![image](https://github.com/KothaiKumar/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121215739/b353f0bb-91a6-42e0-a9bc-d0a6d8471d41)
+
 
 ### Result:
-Thus a procedure is created using PL/SQL.
+Thus, a procedure is created using PL/SQL.
